@@ -1,0 +1,56 @@
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    font-family: 'BookkMyungjo-Bd';
+    z-index: 1;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 20px 0;
+    background-color: white;
+}
+
+.nav{
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.logo{
+    color: black;
+    font-size: 25px;
+    
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    list-style: none;
+}
+
+.links > li {
+    font-size: 20px;
+    padding: 8px 12px;
+    border-radius: 10px;
+    border: none;
+    transition: all 0.3s;
+}
+
+.links > li:hover{
+    background-color: black;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .nav{
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+}
